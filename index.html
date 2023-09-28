@@ -20,17 +20,30 @@
     <header>
       <img src="./assets/img/logo.svg" alt="logo epicode" />
       <h1>EPICODE - Il blog dei developers</h1>
-      <br />
+
       <nav>
-        <i class="fas fa-angle-right"><a href="#">HOME</a></i
-        ><i class="fas fa-angle-left"></i> <br />
-        <i class="fas fa-angle-right"></i><a href="#">ARTICOLI</a
-        ><i class="fas fa-angle-left"></i> <br />
-        <i class="fas fa-angle-right"></i><a href="#">LAVORA CON NOI</a
-        ><i class="fas fa-angle-left"></i>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-angle-right"></i>HOME
+              <i class="fas fa-angle-left"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fas fa-angle-right"></i>ARTICOLI
+              <i class="fas fa-angle-left"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-angle-right"></i>LAVORA CON NOI
+              <i class="fas fa-angle-left"></i>
+            </a>
+          </li>
+        </ul>
       </nav>
-      <br />
-      <br />
     </header>
 
     <main>
@@ -44,11 +57,10 @@
         </h4>
       </section>
       <section>
-        <span
-          >La prima cosa da fare è suddividere in blocchi logici la pagina,
-          identificando le parti comuni da applicare a tutte le pagine.</span
-        >
-        <br />
+        <p>
+          La prima cosa da fare è suddividere in blocchi logici la pagina,
+          identificando le parti comuni da applicare a tutte le pagine.
+        </p>
 
         <ul>
           Le varie aree saranno quindi suddivise in:
@@ -65,11 +77,13 @@
           </li>
         </ul>
 
-        <span>Formattazione del codice</span>
-        <br />
+        <p>Formattazione del codice</p>
+
         <ol>
           Il testo dell'articolo dovrà essere formattato per identificare tutte
-          le parti da selezionare con i CSS. Perciò i passi saranno:
+          le parti da
+          <a href="#">selezionare con i CSS</a
+          >. Perciò i passi saranno:
           <li>
             Progettare il markup assegnando ad ogni specifico testo il tag
             privato
@@ -124,7 +138,7 @@
             </tr>
           </table>
         </div>
-        <br />
+
         <span
           >Un test di validazione potrà essere fatto tramite il
           <a href="#">tool di validazione online</a> dedicato allo scopo. Una
@@ -146,59 +160,65 @@
       <section>
         <form>
           <h2 style="text-transform: uppercase">novità</h2>
-          <span
-            >Vuoi rimanere aggiornato su altre novità del blog?Iscriviti alla
-            nostra newsletter:</span
-          >
+          <p>
+            Vuoi rimanere aggiornato su altre novità del blog?Iscriviti alla
+            nostra newsletter:
+          </p>
 
-          <label for="email">E-mail</label>
-          <input id="email" type="email" placeholder="@" required />
+          <label for="email"></label>
+          <input
+            id="email"
+            type="email"
+            placeholder="inserisci l'email"
+            required
+          />
           <button type="submit">Iscriviti!</button>
         </form>
       </section>
       <h4>ARTICOLI CORRELATI</h4>
 
       <aside>
-        <div class="aside1">
+        <div class="aside">
           <span><a href="#">Validare il codice HTML</a></span>
-          <br />
-          <span><i class="fas fa-tag"></i>Categoria: develop</span>
-          <br />
-          <span><i class="fas fa-calendar-alt"></i>Data:18-9-2020</span>
-        </div>
-        <br />
-        <br />
-        <div class="aside2">
-          <span><a href="#">Correggere la sintassi</a></span>
-          <br />
-          <span><i class="fas fa-tag"></i>Categoria: develop</span>
-          <br />
-          <span><i class="fas fa-calendar-alt"></i>Data:16-9-2020</span>
-          <br />
-        </div>
-        <br />
 
-        <div class="aside3">
-          <span><a href="#">Meno kb nella pagina</a></span>
-          <br />
-          <span><i class="fas fa-tag"></i>Categoria: ottimizzazione</span>
-          <br />
-          <span><i class="fas fa-calendar-alt"></i>Data:30-9-2020</span>
+          <span><i class="fas fa-tag"></i>Categoria: develop</span>
+
+          <div class="date">
+            <span><i class="fas fa-calendar-alt"></i>Data:18-9-2020</span>
+          </div>
         </div>
-        <br />
+
+        <div class="aside">
+          <span><a href="#">Correggere la sintassi</a></span>
+
+          <span><i class="fas fa-tag"></i>Categoria: develop</span>
+
+          <div class="date">
+            <span><i class="fas fa-calendar-alt"></i>Data:16-9-2020</span>
+          </div>
+        </div>
+
+        <div class="aside">
+          <span><a href="#">Meno kb nella pagina</a></span>
+
+          <span><i class="fas fa-tag"></i>Categoria: ottimizzazione</span>
+
+          <div class="date">
+            <span><i class="fas fa-calendar-alt"></i>Data:30-9-2020</span>
+          </div>
+        </div>
       </aside>
       <hr />
     </main>
 
     <footer>
       <span>Blog Epicode &copy; 2023</span>
-      <br />
-      <br />
+
       <span
         >Testata online di Mario Rossi, registrata con prot. n.213/2018 - Via
         Luigi Einaudi 2 - Milano. P.IVA 00112233
       </span>
-      <br />
+
       <span><a href="#">info@epicode.school</a></span>
     </footer>
   </body>

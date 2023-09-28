@@ -12,14 +12,27 @@ body {
 /* HEADER */
 
 header {
-  background-color: #006e88;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(6, 116, 136, 1) 75%
+  );
   color: whitesmoke;
   text-align: center;
   box-shadow: 0px 3px 8px 1px #000000;
+  padding-bottom: 20px;
 }
-.nav *a {
+
+h1 {
+  padding-bottom: 20px;
+}
+nav a {
   font-family: inherit;
   color: whitesmoke;
+  text-decoration: none;
+}
+nav {
+  display: block;
 }
 header img {
   display: block;
@@ -37,7 +50,7 @@ main {
   margin-top: 25px;
   padding: 20px;
   box-shadow: 0px 3px 8px 1px #000000;
-  font-size: larger;
+  font-size: 1.1rem;
   line-height: 2.3rem;
 }
 main section h1 {
@@ -53,7 +66,24 @@ main section em {
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+section code {
+  background-color: #e0e5e1;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 1px;
+}
 
+section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+section ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+ol a {
+  text-decoration: none;
+}
 /* TABELLE */
 .table {
   font-size: larger;
@@ -87,10 +117,30 @@ iframe {
 }
 
 /* FORM */
+form h2 {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: xx-large;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
 form {
   background-color: #e4e4e6;
-  color: whitesmoke;
-  text-align: center;
+  color: black;
+  text-align: left;
+  padding: 30px;
+}
+form button {
+  background-color: #4267ce;
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+form input {
+  font-size: 1rem;
+  border: none;
+  border-bottom: dotted;
+  padding: 0.5rem;
 }
 
 /* ELEMENTI NELL' ASIDE */
@@ -101,25 +151,33 @@ h4 {
   text-align: center;
   padding: 30px;
 }
-.aside1 {
+.aside {
   background-color: #e4e4e6;
   text-align: left;
+  border: 1px solid gray;
+  padding: 15px;
 }
-.aside2 {
-  background-color: #e4e4e6;
-
-  text-align: left;
-}
-.aside3 {
-  background-color: #e4e4e6;
-
-  text-align: left;
+aside span {
+  display: block;
 }
 
+aside .date {
+  text-align: right;
+}
 /* FOOTER */
 footer {
-  background-color: #006e88;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(24, 24, 62, 1) 97%
+  );
   margin-top: 25px;
   text-align: center;
   box-shadow: 0px 3px 8px 1px #000000;
+  display: block;
+}
+footer span {
+  display: block;
+  padding: 15px;
+  color: white;
 }
